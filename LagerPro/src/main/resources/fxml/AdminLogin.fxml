@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="500.0" style="-fx-background-color: e7F4FF;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AdminLoginController">
+   <children>
+      <Rectangle fill="#cfe8ff" height="84.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="500.0" />
+      <Label layoutX="93.0" layoutY="109.0" text="Benutzername" textAlignment="RIGHT" />
+      <Label layoutX="93.0" layoutY="144.0" text="Passwort" textAlignment="RIGHT" />
+      <TextField fx:id="ALI_user" layoutX="203.0" layoutY="104.0" prefHeight="27.0" prefWidth="205.0" promptText="Benutzername" />
+      <PasswordField fx:id="ALI_pw" layoutX="203.0" layoutY="139.0" onAction="#ALI_onEnter" prefHeight="27.0" prefWidth="205.0" promptText="Passwort" />
+      <Button fx:id="ALI_back" layoutX="284.0" layoutY="191.0" mnemonicParsing="false" onAction="#ALI_backButtonPressed" text="Zurück" />
+      <Button fx:id="ALI_login" layoutX="355.0" layoutY="191.0" mnemonicParsing="false" onAction="#ALI_loginButtonPressed" text="Login" textAlignment="CENTER" />
+      <Label fx:id="AdminLoginFail" layoutX="24.0" layoutY="170.0" prefHeight="17.0" prefWidth="452.0" textFill="RED" />
+      <Label layoutX="83.0" layoutY="28.0" text="Administrator Login" textFill="#083ea1">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

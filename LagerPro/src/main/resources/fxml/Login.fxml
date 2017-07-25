@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="500.0" style="-fx-background-color: e7F4FF;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoginController">
+   <children>
+      <Rectangle fill="#cfe8ff" height="84.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="500.0" />
+      <Label layoutX="93.0" layoutY="109.0" text="Benutzername" textAlignment="RIGHT" />
+      <Label layoutX="93.0" layoutY="144.0" text="Passwort" textAlignment="RIGHT" />
+      <TextField fx:id="LI_user" layoutX="203.0" layoutY="104.0" prefHeight="27.0" prefWidth="205.0" promptText="Benutzername" />
+      <PasswordField fx:id="LI_pw" layoutX="203.0" layoutY="139.0" onAction="#onEnter" prefHeight="27.0" prefWidth="205.0" promptText="Passwort" />
+      <Button fx:id="LI_login" layoutX="355.0" layoutY="191.0" mnemonicParsing="false" onAction="#LoginButtonPressed" text="Login" textAlignment="CENTER" />
+      <Label fx:id="LoginFail" layoutX="24.0" layoutY="170.0" prefHeight="17.0" prefWidth="452.0" textFill="RED" />
+      <Label layoutX="120.0" layoutY="27.0" text="Wevo LagerPro" textFill="#083ea1">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

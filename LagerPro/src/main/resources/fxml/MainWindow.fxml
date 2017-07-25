@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="1151.0" style="-fx-background-color: e7f4ff;" stylesheets="@../styles/tableStyle.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainWindowController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cfe8ff" height="83.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1151.0" />
+      <TableView fx:id="MW_TableView" layoutX="10.0" layoutY="112.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="851.0" style="-fx-alignment: CENTER-RIGHT;;">
+        <columns>
+          <TableColumn fx:id="MW_ArtikelIDCol" editable="false" minWidth="-Infinity" prefWidth="122.0" text="Artikelnummer" />
+            <TableColumn fx:id="MW_ProduktNameCol" editable="false" prefWidth="203.0" text="Produktname" />
+            <TableColumn fx:id="MW_NumberCol" prefWidth="75.0" text="Anzahl" />
+            <TableColumn fx:id="MW_ChargeCol" editable="false" prefWidth="121.0" text="Charge" />
+            <TableColumn fx:id="MW_GewichtCol" editable="false" prefWidth="98.0" text="Gewicht (in KG)" />
+            <TableColumn fx:id="MW_LagerplatzCol" editable="false" prefWidth="78.0" text="Lagerplatz" />
+            <TableColumn fx:id="MW_ZuPruefenAbCol" prefWidth="133.0" text="Zu prüfen ab" />
+        </columns>
+      </TableView>
+      <TextField fx:id="MW_search" layoutX="867.0" layoutY="112.0" prefHeight="25.0" prefWidth="266.0" promptText="Suche" />
+      <Button fx:id="MW_create_stock" layoutX="867.0" layoutY="149.0" mnemonicParsing="false" onAction="#MW_createButtonPressed" prefHeight="27.0" prefWidth="266.0" text="Lagereintrag erstellen" />
+      <Button fx:id="MW_edit_stock" layoutX="867.0" layoutY="186.0" mnemonicParsing="false" onAction="#MW_editButtonPressed" prefHeight="27.0" prefWidth="266.0" text="Lagereintrag ändern" />
+      <Button fx:id="MW_delete_stock" layoutX="867.0" layoutY="223.0" mnemonicParsing="false" onAction="#MW_deleteButtonPressed" prefHeight="27.0" prefWidth="266.0" text="Lagereintrag löschen" />
+      <Button fx:id="MW_expired_products" layoutX="867.0" layoutY="260.0" mnemonicParsing="false" onAction="#MW_expiredButtonPressed" prefHeight="27.0" prefWidth="266.0" text="Überlagerte Ware anzeigen" textAlignment="CENTER" />
+      <Label fx:id="MW_info_label" layoutX="10.0" layoutY="602.0" prefHeight="17.0" prefWidth="840.0" textFill="RED" />
+      <Label layoutX="479.0" layoutY="12.0" text="LagerPro" textFill="#083ea1">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="MW_show_day" layoutX="867.0" layoutY="297.0" mnemonicParsing="false" onAction="#MW_showButtonPressed" prefHeight="27.0" prefWidth="266.0" text="Stichtag anzeigen" textAlignment="CENTER" />
+      <Button fx:id="MW_abd" layoutX="867.0" layoutY="334.0" mnemonicParsing="false" onAction="#MW_abdButtonPressed" prefHeight="27.0" prefWidth="266.0" text="Neue Stammdaten hinzufügen" textAlignment="CENTER" />
+      <Button fx:id="MW_export" layoutX="936.0" layoutY="452.0" mnemonicParsing="false" onAction="#MW_exportButtonPressed" text="Test Export to .txt" />
+   </children>
+</Pane>

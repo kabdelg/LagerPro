@@ -1,0 +1,8 @@
+#StockTable .table-column {
+  -fx-alignment: CENTER-RIGHT;
+}
+
+#EP_StockTable .table-column {
+  -fx-alignment: CENTER-RIGHT;
+  -fx-text-fill: #FF0000; 
+}
